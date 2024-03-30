@@ -41,9 +41,9 @@ const Banner = () => {
                             </div>
 
                             <div className=' flex flex-row gap-[30px]  items-center mt-[40px]'>
-                                <p className=' px-[32px] py-[16px] bg-[#FFFFFF] text-[#1F2A37] rounded-3xl text-[16px]'>Report a Claim</p>
+                                <button className=' px-[32px] py-[16px] bg-[#FFFFFF] text-[#1F2A37] rounded-3xl text-[16px]'>Report a Claim</button>
 
-                                <p className='text-white'>Learn More</p>
+                                <button className='text-white'>Learn More</button>
                             </div>
 
                         </div>
@@ -59,7 +59,7 @@ const Banner = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                <div className='lg:flex lg:flex-row lg:justify-between bg-green-500 rounded-[10px]'>
+                    <div className='lg:flex lg:flex-row lg:justify-between bg-green-500 rounded-[10px]'>
                         <div className=' lg:w-1/2 lg:py-[64px] py-[31px] lg:ps-[54px] ps-[31px]'>
                             <div>
                                 <h1 className=' lg:text-[48px] text-[30px] font-bold text-white uppercase lg:w-[553px] '>Get affordable, same-day coverage in no time.</h1>
@@ -67,9 +67,9 @@ const Banner = () => {
                             </div>
 
                             <div className=' flex flex-row gap-[30px]  items-center mt-[40px]'>
-                                <p className=' px-[32px] py-[16px] bg-[#FFFFFF] text-[#1F2A37] rounded-3xl text-[16px]'>Report a Claim</p>
+                                <button className=' px-[32px] py-[16px] bg-[#FFFFFF] text-[#1F2A37] rounded-3xl text-[16px]'>Report a Claim</button>
 
-                                <p className='text-white'>Learn More</p>
+                                <button className='text-white'>Learn More</button>
                             </div>
 
                         </div>
