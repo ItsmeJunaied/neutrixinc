@@ -1,9 +1,11 @@
 'use client'
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
 const Navbar = () => {
+    const pathName = usePathname;
     const [menuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -11,7 +13,7 @@ const Navbar = () => {
     };
     return (
         <div>
-            <nav className="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
+            <nav className="bg-white border-gray-200 lg:h-[84px] shadow-md">
                 <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
                     <div>
                         <Link href='/'>
@@ -47,9 +49,10 @@ const Navbar = () => {
                             </svg>
                         </button>
                     </div>
-                    <div className={`items-center justify-between p-8 bg-[#C81E1E] text-white w-full lg:flex lg:w-auto lg:order-1 ${menuOpen ? 'block' : 'hidden'}`} id="mobile-menu-2">
-                        <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                    <div className={`items-center align-middle justify-between h-full lg:p-0 p-8  lg:bg-white bg-[#C81E1E] lg:text-black text-white w-full lg:flex lg:w-auto  ${menuOpen ? 'block' : 'hidden'}`} id="mobile-menu-2">
+                        <ul className="flex flex-col items-center mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                             <li className=' py-5'>
+                                
                                 <Link href='/'>
                                     <p className='text-[16px] '>Home</p>
                                 </Link>
@@ -65,9 +68,9 @@ const Navbar = () => {
                             <li className=' py-5'>
                                 <p className='text-[16px]'>Popcyholder Portal</p>
                             </li>
-                            {/* <li className=' py-5'>
+                            <li className=' py-5 hidden lg:flex'>
                                 <p className='px-[20px] py-[10px] bg-[#C81E1E] text-[#E5E7EB] rounded-3xl text-[16px]'>Report a Claim</p>
-                            </li> */}
+                            </li>
                         </ul>
                     </div>
 
