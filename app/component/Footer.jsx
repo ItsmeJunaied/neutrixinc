@@ -56,7 +56,7 @@ const Footer = () => {
             </div>
 
 
-            <div className="lg:hidden bg-[#1F2A37] text-white py-10 px-3">
+            <div className="lg:hidden bg-[#1F2A37] text-white py-10 px-3 mt-5">
                 {/* USA Underwriter */}
                 <div className="collapse collapse-arrow bg-[#1F2A37] border-[#374151] border-2">
                     <input type="radio" name="accordion" defaultChecked />
