@@ -3,6 +3,8 @@ import "./globals.css";
 import Navbar from "./component/Navbar";
 import Home from "./component/Home";
 import Footer from "./component/Footer";
+import Cards from "./component/Cards";
+import Report from "./component/Report";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,10 +20,11 @@ export default function RootLayout({ children }) {
         <div className=' shadow-sm'>
           <Navbar />
         </div>
-        <Home />
-
         {children}
-
+        <div className=" container mx-auto">
+          <Cards />
+          <Report />
+        </div>
         <Footer />
       </body>
     </html>
