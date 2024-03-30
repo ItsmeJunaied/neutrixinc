@@ -1,6 +1,7 @@
 import React from 'react';
 import Banner from './Banner';
 import Features from './Features';
+import Cards from './Cards';
 
 const Home = () => {
     return (
@@ -8,7 +9,8 @@ const Home = () => {
 
             <div className='container mx-auto'>
                 <Banner />
-                <Features/>
+                <Features />
+                <Cards />
             </div>
         </div>
     );
