@@ -4,6 +4,7 @@ import Link from 'next/link';
 const Navbar = () => {
     return (
         <div>
+
             <div className=' container mx-auto flex flex-row justify-between align-middle items-center py-[19px]  '>
                 <div>
                     <Link href='/'>
